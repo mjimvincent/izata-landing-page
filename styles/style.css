@@ -1,0 +1,178 @@
+/* @import https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 1.4rem;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  float: none;
+  position: fixed;
+  width: 100vw;
+  height: 74px;
+  align-items: center;
+  overflow: hidden;
+
+  z-index: 200;
+}
+
+.header-inner {
+  display: block;
+  float: none;
+  z-index: auto;
+  margin: 0 auto 0 auto;
+  width: 750px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.logo-container {
+  display: block;
+  float: left;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: auto;
+}
+
+.nav {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  z-index: auto;
+}
+
+.nav-links-container {
+  display: block;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.test-box {
+  float: right;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  margin-right: 25px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.nav {
+  flex: 4;
+}
+
+.nav-links {
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: darkcyan;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cyan;
+  scroll-snap-align: start;
+}
+
+.body-container {
+  scroll-snap-type: y mandatory;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  /*  scroll-padding: 10vh;*/
+  scroll-behavior: smooth;
+}
+.content-wrapper {
+  position: absolute;
+  display: block;
+  width: 700px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.container-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  height: 50px;
+}
+
+#home {
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: red; */
+}
+
+#particles {
+  height: 100vh;
+}
+
+#title {
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* width: 100%; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  font-family: monospace;
+  font-size: 50px;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
+}
+
+.one {
+  background: #1c1c1c;
+  /* position: relative; */
+}
+
+.two {
+  background: #f0f0f0;
+}
+
+.three {
+  background: #1c1c1c;
+}
+
+.four {
+  background: #f0f0f0;
+}
