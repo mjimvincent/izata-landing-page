@@ -27,10 +27,10 @@ var Messenger = function(el){
       m.current_length = 0;
       m.fadeBuffer = false;
       m.messages = [
-        'Innovation.',
-        'Connection.',
-        'Artificial Intelligence.',
-        'IZATA TECHNOLOGIES',
+        'Vision',
+        'Conceptualization',
+        'Development',
+        'Reality',
       ];
       
       setTimeout(m.animateIn, 100);
