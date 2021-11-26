@@ -128,8 +128,7 @@ var Messenger = function(el){
             dotColor: '#FFFFFF',
             lineColor: '#FFFFFF'
         });
-        var intro = document.getElementById('intro');
-        intro.style.marginTop = -intro.offsetHeight / 2 + 'px';
+        
     }, false);
 
 
@@ -582,8 +581,20 @@ var Messenger = function(el){
                 clearTimeout(id);
             };
     }());
-    // alert("im here")
-    //  window.document.dispatchEvent(new Event("DOMContentLoaded", {
-    //   bubbles: true,
-    //   cancelable: true
-    // }));
+    
+
+/////////////////////////////////////////////////////////////////////
+const inViewport = (entries, observer) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    });
+  };
+  
+  const Obs = new IntersectionObserver(inViewport);
+  const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+  
+  // Attach observer to every [data-inviewport] element:
+  const ELs_inViewport = document.querySelectorAll('.slide-up-fade-in');
+  ELs_inViewport.forEach(EL => {
+    Obs.observe(EL, obsOptions);
+  });
