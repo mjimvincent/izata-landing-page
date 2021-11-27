@@ -19,9 +19,10 @@ body {
   z-index: 0;
   position: absolute;
   height: auto;
-  width: 100%;
+  /* width: 100%; */
   opacity: 0.3;
   overflow: hidden;
+  background-size: cover;
 }
 
 .grid {
@@ -163,8 +164,11 @@ section {
 
 #izata-banner {
   height: auto;
-  width: 100%;
-  max-width: 700px;
+  width: 1024px;
+  font-size: 80px;
+  text-align: center;
+  line-height: 1.3em;
+  color: white;
 }
 
 #home {
@@ -185,56 +189,13 @@ section {
 
 #title {
   font-family: "Poppins", monospace;
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 500;
   white-space: nowrap;
   text-shadow: 0 2px 2px rgba(#000, 0.9);
   height: 50px;
   margin-top: 0;
   color: white;
-}
-
-#landing-page-button button {
-  margin-top: 70px;
-  font-size: 25px;
-  padding: 12px;
-  background-color: #003b59;
-  border-radius: 50px;
-  border: none;
-  letter-spacing: 3px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  color: cyan;
-
-  mix-blend-mode: color-dodge;
-  -webkit-transition: mix-blend-mode 2s ease-out;
-  -moz-transition: mix-blend-mode 2s ease-out;
-  -o-transition: mix-blend-mode 2s ease-out;
-  transition: mix-blend-mode 2s ease-out;
-}
-
-#landing-page-button button:hover {
-  margin-top: 70px;
-  font-size: 25px;
-  padding: 12px;
-  background-color: #003b59;
-  border-radius: 10px;
-  border: none;
-  letter-spacing: 3px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  color: cyan;
-  mix-blend-mode: normal;
 }
 
 .one {
