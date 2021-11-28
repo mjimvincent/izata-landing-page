@@ -124,7 +124,7 @@ var Messenger = function(el){
 });
 
           document.addEventListener('DOMContentLoaded', function () {
-        particleground(document.getElementById('particles'), {
+        particleground(document.getElementById('particles-iz'), {
             dotColor: '#FFFFFF',
             lineColor: '#FFFFFF'
         });
